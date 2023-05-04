@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Initial Commit" />
+    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/output/myDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../server/output/myDb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/EndPoints/DocumentEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/EndPoints/DocumentEndPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/build-metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/build-metrics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/EndPoints/DocumentEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/EndPoints/DocumentEndPoint.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +48,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "preferences.JavaFX"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -88,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683185222053</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <created>1683210426875</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683210426875</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -97,5 +115,9 @@
     </ignored-roots>
     <MESSAGE value="Initial Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

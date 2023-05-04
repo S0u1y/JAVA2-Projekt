@@ -1,6 +1,5 @@
 package EndPoints;
 
-import JPA.Course;
 import JPA.Document;
 
 import javax.inject.Inject;
@@ -31,6 +30,19 @@ public class DocumentEndPoint {
     public Long createDocument(Document document){
         em.persist(document);
         return document.getId();
+    }
+
+    @Transactional
+    @DELETE
+    @Path("/course/{id}")
+    public Response deleteCourse(@PathParam("id") Long id) {
+        Document result = em.find(Document.class, id);
+        if (result == null) {
+            return Response.status(Response.Status.NOT_FOUND).type(MediaType.TEXT_PLAIN)
+                    .entity("JPA.Document with id = " + id + " not found").build();
+        }
+        em.remove(result);
+        return Response.ok().build();
     }
 
 }
