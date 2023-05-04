@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/output/myDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../server/output/myDb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/EndPoints/DocumentEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/EndPoints/DocumentEndPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/target/build-metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/build-metrics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/target/classes/EndPoints/DocumentEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/EndPoints/DocumentEndPoint.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +31,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Filip/IdeaProjects/JAVA2_PROJECT",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.JavaFX"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Filip/IdeaProjects/JAVA2_PROJECT&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Filip\IdeaProjects\JAVA2_PROJECT\client\src\main\java\com\example\client" />
