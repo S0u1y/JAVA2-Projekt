@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.MembershipShopController">
+   <children>
+      <VBox layoutX="225.0" layoutY="83.0">
+         <children>
+            <Label fx:id="membershipLabel" text="%key.membershipLabel" />
+            <ComboBox fx:id="lengthPick" prefWidth="150.0" promptText="%key.MonthsText" />
+         </children>
+      </VBox>
+      <VBox layoutX="205.0" layoutY="146.0" prefHeight="88.0" prefWidth="190.0" style="-fx-border-color: black;">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label fx:id="membershipUntilText" contentDisplay="CENTER" prefHeight="17.0" text="%key.ActiveUntilText">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="membershipUntilDate" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="32.0" text="_____">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label fx:id="priceText" contentDisplay="CENTER" prefHeight="17.0" text="%key.PriceText">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="price" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="32.0" text="_____">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="153.0" layoutY="291.0" prefHeight="25.0" prefWidth="295.0">
+         <children>
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#onCancelClicked" text="%key.CancelText" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="buyButton" mnemonicParsing="false" onAction="#onBuyClicked" text="%key.PurchaseText" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

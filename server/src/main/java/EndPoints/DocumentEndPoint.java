@@ -34,8 +34,8 @@ public class DocumentEndPoint {
 
     @Transactional
     @DELETE
-    @Path("/course/{id}")
-    public Response deleteCourse(@PathParam("id") Long id) {
+    @Path("/document/{id}")
+    public Response deleteDocument(@PathParam("id") Long id) {
         Document result = em.find(Document.class, id);
         if (result == null) {
             return Response.status(Response.Status.NOT_FOUND).type(MediaType.TEXT_PLAIN)

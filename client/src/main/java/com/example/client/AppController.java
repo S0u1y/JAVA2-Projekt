@@ -1,6 +1,12 @@
 package com.example.client;
 
-public interface AppController {
-    void startAppInternal(Object object);
-    void startApp();
+public abstract class AppController<T> {
+
+    T mainApp;
+
+    abstract void startAppInternal(Object object);
+    abstract void startApp();
+    void setMainApp(T app){
+        mainApp = app;
+    }
 }
