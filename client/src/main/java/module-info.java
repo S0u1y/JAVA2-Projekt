@@ -13,6 +13,8 @@ module com.example.client {
     requires jakarta.ws.rs;
     requires lombok;
 
+    requires java.money;
+
     requires java.xml;
 
 

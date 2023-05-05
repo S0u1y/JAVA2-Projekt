@@ -25,7 +25,7 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        locale = new Locale("cs");
+        locale = new Locale("cs", "CZ");
         resourceBundle = ResourceBundle.getBundle("Texts", locale);
 
         fxmlLoader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("hello-view.fxml")), resourceBundle);
@@ -69,8 +69,8 @@ public class HelloApplication extends Application {
 
     }
 
-    public void changeLanguage(String language){
-        locale = new Locale(language);
+    public void changeLanguage(Locale locale){
+        this.locale = locale;
         resourceBundle = ResourceBundle.getBundle("Texts", locale);
 
         fxmlLoader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("hello-view.fxml")), resourceBundle);
@@ -82,12 +82,17 @@ public class HelloApplication extends Application {
             controller.startApp();
             controller.setMainApp(this);
 
+            System.gc();
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
     }
 
+    public Locale getLocale() {
+        return locale;
+    }
 
     public record WindowValues(Stage stage, Scene scene, AppController controller) {}
 }

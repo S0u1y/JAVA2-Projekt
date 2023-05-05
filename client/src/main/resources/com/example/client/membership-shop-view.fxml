@@ -14,7 +14,7 @@
       <VBox layoutX="225.0" layoutY="83.0">
          <children>
             <Label fx:id="membershipLabel" text="%key.membershipLabel" />
-            <ComboBox fx:id="lengthPick" prefWidth="150.0" promptText="%key.MonthsText" />
+            <ComboBox fx:id="lengthPick" onAction="#onLengthPick" prefWidth="150.0" promptText="%key.MonthsText" />
          </children>
       </VBox>
       <VBox layoutX="205.0" layoutY="146.0" prefHeight="88.0" prefWidth="190.0" style="-fx-border-color: black;">
@@ -27,7 +27,7 @@
                      </HBox.margin>
                   </Label>
                   <Region HBox.hgrow="ALWAYS" />
-                  <Label fx:id="membershipUntilDate" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="32.0" text="_____">
+                  <Label fx:id="membershipUntilDate" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="17.0" text="_____">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
@@ -42,7 +42,7 @@
                      </HBox.margin>
                   </Label>
                   <Region HBox.hgrow="ALWAYS" />
-                  <Label fx:id="price" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="32.0" text="_____">
+                  <Label fx:id="price" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="17.0" text="_____">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>

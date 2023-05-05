@@ -10,6 +10,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.util.Locale;
+
 public class SettingsController extends AppController<HelloApplication> {
 
     @FXML
@@ -34,9 +36,9 @@ public class SettingsController extends AppController<HelloApplication> {
     @FXML
     private void setLanguagePick(ActionEvent e){
         switch(languagePick.getValue()){
-            case "Czech" -> mainApp.changeLanguage("cs");
-            case "Russian" -> mainApp.changeLanguage("ru");
-            case "English" -> mainApp.changeLanguage("en");
+            case "Czech" -> mainApp.changeLanguage(Locale.of("cs", "CZ"));
+            case "Russian" -> mainApp.changeLanguage(Locale.of("ru", "RU"));
+            case "English" -> mainApp.changeLanguage(Locale.of("en", "US"));
         }
     }
 

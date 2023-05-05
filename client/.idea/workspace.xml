@@ -4,32 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/MembershipShopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Texts.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Texts_cs.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Texts_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Texts_ru.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/membership-shop-view.fxml" afterDir="false" />
+    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Added functionality to settings">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Money.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/MembershipShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/MembershipShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/SettingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/settings-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Texts_cs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Texts_cs_CZ.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Texts_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Texts_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Texts_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Texts_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/membership-shop-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/membership-shop-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/SettingsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/SettingsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/settings-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/output/myDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../server/output/myDb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/EndPoints/DocumentEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/EndPoints/DocumentEndPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/target/build-metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/build-metrics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/target/classes/EndPoints/DocumentEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/EndPoints/DocumentEndPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +33,8 @@
       <list>
         <option value="Interface" />
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -123,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683210426875</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added functionality to settings">
+      <created>1683322467354</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683322467354</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,7 +130,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Added functionality to settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to settings" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

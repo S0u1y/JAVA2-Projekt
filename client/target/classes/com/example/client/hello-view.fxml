@@ -25,9 +25,9 @@
                   <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <TextField GridPane.columnIndex="2" />
-                  <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onBuyMembershipClicked" text="Buy Membership" GridPane.columnIndex="4" GridPane.halignment="RIGHT" />
-                  <Button mnemonicParsing="false" onAction="#onSettingsClicked" text="Settings" />
+                  <TextField promptText="%key.Search" GridPane.columnIndex="2" />
+                  <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onBuyMembershipClicked" text="%key.MembershipShop" GridPane.columnIndex="4" GridPane.halignment="RIGHT" />
+                  <Button mnemonicParsing="false" onAction="#onSettingsClicked" text="%key.Settings" />
                </children>
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="5.0" />
