@@ -55,15 +55,15 @@ public class MembershipShopController extends AppController<HelloApplication> {
 
     @FXML
     private void onLengthPick(){
-        NumberFormat numberFormat = NumberFormat.getInstance();
+        NumberFormat numberFormat = NumberFormat.getCurrencyInstance(mainApp.getLocale());
 
         MonetaryAmount amount = basePrice.convert(mainApp.getLocale());
 
         switch (lengthPick.getValue()) {
-            case 1 -> price.setText(String.valueOf(amount));
-            case 2 -> price.setText(String.valueOf((amount.add(amount).multiply(0.7))));
-            case 6 -> price.setText(String.valueOf((amount.multiply(6).multiply(0.7))));
-            case 12 -> price.setText(String.valueOf((amount.multiply(12).multiply(0.65))));
+            case 1 -> price.setText(numberFormat.format(amount.getNumber()));
+            case 2 -> price.setText((numberFormat.format(amount.add(amount).multiply(0.7).getNumber())));
+            case 6 -> price.setText((numberFormat.format(amount.multiply(6).multiply(0.7).getNumber())));
+            case 12 -> price.setText((numberFormat.format(amount.multiply(12).multiply(0.65).getNumber())));
         }
     }
 

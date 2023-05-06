@@ -1,6 +1,7 @@
 package com.example.client;
 
 
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -43,8 +44,9 @@ public class SettingsController extends AppController<HelloApplication> {
     }
 
     @FXML
-    private void onOkClicked(ActionEvent e){
-        ((Stage)((Button)e.getSource()).getScene().getWindow()).close();
+    private void onOkClicked(){
+        mainApp.SettingsWindow.stage().close();
+        mainApp.SettingsWindow = null;//memory leaks?
     }
 
 }

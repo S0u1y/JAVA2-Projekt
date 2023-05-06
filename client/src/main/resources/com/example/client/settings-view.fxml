@@ -14,9 +14,9 @@
          <children>
             <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="68.0" prefWidth="133.0">
                <children>
-                  <Label text="Jazyk" />
+                  <Label text="Language" />
                   <ComboBox fx:id="languagePick" minWidth="-Infinity" onAction="#setLanguagePick" prefHeight="25.0" prefWidth="133.0" promptText="language" visibleRowCount="2" />
-                  <Label text="(Nastaví i měnu)" />
+                  <Label text="(Also sets currency)" />
                </children>
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

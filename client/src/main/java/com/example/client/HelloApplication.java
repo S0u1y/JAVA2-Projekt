@@ -5,14 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Locale;
-import java.util.Objects;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class HelloApplication extends Application {
 
-    private ArrayList openedWindows = new ArrayList<String>();
+    public Map<Long, Document> documentMap = new HashMap<>();
 
     private HelloController controller;
     Scene scene;
@@ -22,6 +19,9 @@ public class HelloApplication extends Application {
     ResourceBundle resourceBundle;
 
     FXMLLoader fxmlLoader;
+
+    public WindowValues SettingsWindow;
+
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -38,17 +38,15 @@ public class HelloApplication extends Application {
         stage.show();
 
         controller = fxmlLoader.getController();
-        controller.startApp();
         controller.setMainApp(this);
+        controller.startApp();
+
     }
     public static void main(String[] args) {
         launch();
     }
 
     public WindowValues openWindow(String name) throws IOException{
-        if(openedWindows.contains(name)){
-            return null;
-        }
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(name), resourceBundle);
 
         Scene scene1 = new Scene(fxmlLoader.load());
@@ -61,11 +59,9 @@ public class HelloApplication extends Application {
         AppController controller1 = fxmlLoader.getController();
         controller1.startApp();
 
-
-
         return new WindowValues(stage1, scene1, controller1);
     }
-    public void changeWindow(String name){
+    public void changeWindow(Stage stage, String name){
 
     }
 
@@ -79,8 +75,8 @@ public class HelloApplication extends Application {
             stage.setScene(scene);
 
             controller = fxmlLoader.getController();
-            controller.startApp();
             controller.setMainApp(this);
+            controller.startApp();
 
             System.gc();
 

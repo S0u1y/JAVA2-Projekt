@@ -15,6 +15,9 @@ module com.example.client {
 
     requires java.money;
 
+    requires org.javamoney.moneta;
+    requires org.javamoney.moneta.convert;
+
     requires java.xml;
 
 

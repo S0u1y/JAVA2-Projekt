@@ -1,8 +1,13 @@
 package com.example.client;
 
+import org.javamoney.moneta.FastMoney;
+
 import javax.money.*;
 import javax.money.convert.CurrencyConversion;
+import javax.money.convert.ExchangeRateProvider;
+import javax.money.convert.ExchangeRateProviderSupplier;
 import javax.money.convert.MonetaryConversions;
+import javax.money.spi.MonetaryConversionsSingletonSpi;
 import java.util.Locale;
 
 public class Money {
@@ -26,6 +31,7 @@ public class Money {
                 .setNumber(amount)
                 .setCurrency(unit)
                 .create();
+
     }
 
     MonetaryAmount convert(String convertTo){
@@ -35,7 +41,34 @@ public class Money {
 
     MonetaryAmount convert(Locale locale){
         CurrencyConversion conversion = MonetaryConversions.getConversion(Monetary.getCurrency(locale));
-        return amount.with(conversion);
+
+        MonetaryAmount output = amount;
+
+        try{
+
+            output = amount.with(conversion);
+
+        }catch (Exception e){
+
+            if(locale.getCountry().equals("ru") || locale.getCountry().equals("RU")){
+
+                output = Monetary.getDefaultAmountFactory()
+                        .setNumber(amount.getNumber())
+                        .setCurrency("RUB")
+                        .create();
+
+                //conversion rates as of 6.5.2023
+                if(amount.getCurrency().getCurrencyCode().equals("CZK")){
+                    output = output.multiply(3.67);
+                }
+                if(amount.getCurrency().getCurrencyCode().equals("USD")){
+                    output = output.multiply(77.82);
+                }
+            }
+
+        }
+
+        return output;
     }
 
     public MonetaryAmount getAmount(){

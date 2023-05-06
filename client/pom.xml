@@ -78,11 +78,25 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.javamoney/moneta -->
         <dependency>
             <groupId>org.javamoney</groupId>
             <artifactId>moneta</artifactId>
             <version>1.4.3-SNAPSHOT</version>
             <type>pom</type>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.javamoney.moneta/moneta-convert -->
+        <dependency>
+            <groupId>org.javamoney.moneta</groupId>
+            <artifactId>moneta-convert</artifactId>
+            <version>1.4.3-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.javamoney.moneta</groupId>
+            <artifactId>moneta-core</artifactId>
+            <version>1.4.3-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
