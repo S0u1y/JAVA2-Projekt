@@ -1,6 +1,7 @@
 package com.example.client;
 
 import com.example.client.ClientEndPoints.DocumentClient;
+import com.example.client.ClientEndPoints.PageClient;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -47,9 +48,29 @@ public class HelloController extends AppController<HelloApplication>{
 
 
     private void onItemSelected(ActionEvent e){
-        int id = Integer.parseInt(((Button)(e.getTarget())).getId());
+        Button selected = (Button)(e.getTarget());
+        int id = Integer.parseInt(selected.getId());
         System.out.println(id);
+        try{
+            if(mainApp.page != null) return;
+            HelloApplication.WindowValues objects = mainApp.openWindow("page-view.fxml");
 
+            if(objects == null) return;
+
+            objects.stage().setTitle(selected.getText());
+            Page firstPage = EndPointProvider.getClient(PageClient.class).getPage(7L, 1);
+            ((PageController)objects.controller()).setPage(firstPage);
+            objects.controller().setMainApp(mainApp);
+
+            objects.stage().setOnCloseRequest(windowEvent -> {
+                mainApp.page = null; //doesn't this cause memory leaks?
+            });
+
+            mainApp.page = objects;
+
+        } catch (Exception ex) {
+            throw new RuntimeException(ex);
+        }
     }
 
     @FXML

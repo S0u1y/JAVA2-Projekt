@@ -4,18 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Added dynamic price + conversions">
+    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Fixed RUB conversion, only one settings window open at a time,&#10;identity map for documents">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/ClientEndPoints/PageClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/page-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/EndPoints/PageEndPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/MembershipShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/MembershipShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Money.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/SettingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/settings-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/SettingsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/SettingsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/settings-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/output/myDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../server/output/myDb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/JPA/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/JPA/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/target/build-metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/build-metrics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/JPA/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/JPA/Page.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -123,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683327922554</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed RUB conversion, only one settings window open at a time,&#10;identity map for documents">
+      <created>1683369302864</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683369302864</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,7 +148,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added functionality to settings" />
     <MESSAGE value="Added dynamic price + conversions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic price + conversions" />
+    <MESSAGE value="Fixed RUB conversion, only one settings window open at a time,&#10;identity map for documents" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed RUB conversion, only one settings window open at a time,&#10;identity map for documents" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -21,6 +21,7 @@ public class HelloApplication extends Application {
     FXMLLoader fxmlLoader;
 
     public WindowValues SettingsWindow;
+    public WindowValues page;
 
 
     @Override
