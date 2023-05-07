@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Fixed RUB conversion, only one settings window open at a time,&#10;identity map for documents">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/ClientEndPoints/PageClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/PageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/page-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/EndPoints/PageEndPoint.java" afterDir="false" />
+    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Added Read document functionality">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/EndPointProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/ClientEndPoints/EndPointProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/SettingsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/SettingsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/settings-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/output/myDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../server/output/myDb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/JPA/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/JPA/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/target/build-metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/build-metrics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/target/classes/JPA/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/JPA/Page.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +44,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Filip/IdeaProjects/JAVA2_PROJECT&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -73,7 +63,7 @@
       <module name="client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.client.*" />
+          <option name="PATTERN" value="com.example.client.ClientEndPoints.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683369302864</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Read document functionality">
+      <created>1683379790321</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683379790321</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,7 +146,8 @@
     <MESSAGE value="Added functionality to settings" />
     <MESSAGE value="Added dynamic price + conversions" />
     <MESSAGE value="Fixed RUB conversion, only one settings window open at a time,&#10;identity map for documents" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed RUB conversion, only one settings window open at a time,&#10;identity map for documents" />
+    <MESSAGE value="Added Read document functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Read document functionality" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

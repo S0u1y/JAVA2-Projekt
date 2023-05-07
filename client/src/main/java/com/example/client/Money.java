@@ -4,10 +4,7 @@ import org.javamoney.moneta.FastMoney;
 
 import javax.money.*;
 import javax.money.convert.CurrencyConversion;
-import javax.money.convert.ExchangeRateProvider;
-import javax.money.convert.ExchangeRateProviderSupplier;
 import javax.money.convert.MonetaryConversions;
-import javax.money.spi.MonetaryConversionsSingletonSpi;
 import java.util.Locale;
 
 public class Money {
@@ -16,6 +13,9 @@ public class Money {
     public static CurrencyUnit usd = Monetary.getCurrency(Locale.of("en", "US"));
 
     public static CurrencyUnit ru = Monetary.getCurrency(Locale.of("ru", "RU"));
+
+
+
 
     private MonetaryAmount amount;
 

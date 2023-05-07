@@ -23,4 +23,6 @@ module com.example.client {
 
     opens com.example.client to javafx.fxml;
     exports com.example.client;
+    exports com.example.client.ClientEndPoints;
+    opens com.example.client.ClientEndPoints to javafx.fxml;
 }

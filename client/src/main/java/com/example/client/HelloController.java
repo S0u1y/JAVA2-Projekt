@@ -1,6 +1,7 @@
 package com.example.client;
 
 import com.example.client.ClientEndPoints.DocumentClient;
+import com.example.client.ClientEndPoints.EndPointProvider;
 import com.example.client.ClientEndPoints.PageClient;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -26,10 +27,12 @@ public class HelloController extends AppController<HelloApplication>{
     @Override
     public void startApp() {
 
-        DocumentClient documentClient = EndPointProvider.getClient(DocumentClient.class);
-        List<Document> documents = documentClient.getDocuments();
+        if(mainApp.documentMap.isEmpty()){
+            DocumentClient documentClient = EndPointProvider.getClient(DocumentClient.class);
+            List<Document> documents = documentClient.getDocuments();
+            mainApp.documentMap.putAll(documents.stream().collect(Collectors.toMap(Document::getId, o->o)));
+        }
 
-        mainApp.documentMap.putAll(documents.stream().collect(Collectors.toMap(Document::getId, o->o)));
 
         mainApp.documentMap.forEach((id, document) -> {
             Button newBtn = new Button(document.getTitle());

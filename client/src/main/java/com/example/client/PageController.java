@@ -1,5 +1,6 @@
 package com.example.client;
 
+import com.example.client.ClientEndPoints.EndPointProvider;
 import com.example.client.ClientEndPoints.PageClient;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

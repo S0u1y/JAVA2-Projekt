@@ -1,4 +1,4 @@
-package com.example.client;
+package com.example.client.ClientEndPoints;
 
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.jakarta.rs.json.JacksonXmlBindJsonProvider;
