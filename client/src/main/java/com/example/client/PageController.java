@@ -28,7 +28,7 @@ public class PageController extends AppController<HelloApplication>{
 
     @Override
     public void startApp() {
-
+        handleswitchButtonsVisibility();
     }
 
     public void setPage(Page page) {
@@ -36,6 +36,10 @@ public class PageController extends AppController<HelloApplication>{
         this.pageText.setText(page.getContent());
         this.maxPages = EndPointProvider.getClient(PageClient.class).getNumberOfPages(page.getDocument().getId());
         handleswitchButtonsVisibility();
+    }
+
+    public void setPageText(String pageText) {
+        this.pageText.setText(pageText);
     }
 
     @FXML
@@ -56,6 +60,11 @@ public class PageController extends AppController<HelloApplication>{
     }
 
     private void handleswitchButtonsVisibility(){
+        if(page == null){
+            next.setVisible(false);
+            previous.setVisible(false);
+            return;
+        }
         next.setVisible(this.page.getPage_number() != this.maxPages);
         previous.setVisible(this.page.getPage_number() != 1);
     }

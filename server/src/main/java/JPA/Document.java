@@ -5,10 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -23,5 +20,18 @@ public class Document {
 
     private String title;
     private String description;
+
+    public static int getNextPageNumber(EntityManager entityManager, Long document_id){
+        Query max = entityManager.createQuery("SELECT max(page.page_number) FROM Page as page WHERE page.document = :document_id");
+        max.setParameter("document_id", entityManager.find(Document.class, document_id));
+
+        return (int)(max.getResultList().get(0)) + 1;
+    }
+    public int getNextPageNumber(EntityManager entityManager){
+        Query max = entityManager.createQuery("SELECT max(page.page_number) FROM Page as page WHERE page.document = :document_id");
+        max.setParameter("document_id", entityManager.find(Document.class, id));
+
+        return (int)(max.getResultList().get(0)) + 1;
+    }
 
 }

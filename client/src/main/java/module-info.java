@@ -19,6 +19,7 @@ module com.example.client {
     requires org.javamoney.moneta.convert;
 
     requires java.xml;
+    requires org.apache.logging.log4j;
 
 
     opens com.example.client to javafx.fxml;
