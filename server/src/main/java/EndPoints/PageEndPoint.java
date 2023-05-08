@@ -2,6 +2,7 @@ package EndPoints;
 
 import JPA.Document;
 import JPA.Page;
+import Util.ReflectiveCloner;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -57,6 +58,22 @@ public class PageEndPoint {
         em.persist(page);
 
         return page.getId();
+    }
+
+    @Transactional
+    @PUT
+    @Path("/updatepage")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updatePage(Page page){
+        Page result = em.find(Page.class, page.getId());
+        if(result == null){
+            return Response.status(Response.Status.NOT_FOUND).type(MediaType.TEXT_PLAIN)
+                    .entity("JPA.Page with id = " + page.getId() + " not found").build();
+        }
+
+        ReflectiveCloner.clone(page, result);
+
+        return Response.ok().build();
     }
 
     public int getNextPageNumber(Long document_id){

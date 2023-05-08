@@ -4,26 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Documents map loads only once...">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/StartupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/resources/Log4j2.xml" afterDir="false" />
+    <list default="true" id="149b1fa1-836d-47a5-ae2c-473e9561efd9" name="Changes" comment="Added server database initialization and logging">
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/Util/ReflectiveCloner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/EndPointProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/client/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/output/myDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../server/output/myDb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/EndPoints/DocumentEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/EndPoints/DocumentEndPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/EndPoints/Foo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/EndPoints/Foo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/EndPoints/PageEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/EndPoints/PageEndPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/main/java/JPA/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/JPA/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/JPA/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/JPA/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/target/build-metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/build-metrics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/EndPoints/DocumentEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/EndPoints/DocumentEndPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/target/classes/JPA/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/JPA/Document.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/target/quarkus/bootstrap/dev-app-model.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../server/target/quarkus/bootstrap/dev-app-model.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683485089434</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added server database initialization and logging">
+      <created>1683496671093</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683496671093</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,7 +164,8 @@
     <MESSAGE value="Fixed RUB conversion, only one settings window open at a time,&#10;identity map for documents" />
     <MESSAGE value="Added Read document functionality" />
     <MESSAGE value="Documents map loads only once..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Documents map loads only once..." />
+    <MESSAGE value="Added server database initialization and logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added server database initialization and logging" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
