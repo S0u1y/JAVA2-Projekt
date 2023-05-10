@@ -14,9 +14,6 @@ public class Money {
 
     public static CurrencyUnit ru = Monetary.getCurrency(Locale.of("ru", "RU"));
 
-
-
-
     private MonetaryAmount amount;
 
     Money(String base, double amount){

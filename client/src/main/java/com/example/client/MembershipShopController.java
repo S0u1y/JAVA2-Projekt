@@ -8,8 +8,8 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import javax.money.MonetaryAmount;
-import javax.money.NumberValue;
 import java.text.NumberFormat;
+import java.util.concurrent.CompletableFuture;
 
 
 public class MembershipShopController extends AppController<HelloApplication> {
@@ -65,6 +65,7 @@ public class MembershipShopController extends AppController<HelloApplication> {
             case 6 -> price.setText((numberFormat.format(amount.multiply(6).multiply(0.7).getNumber())));
             case 12 -> price.setText((numberFormat.format(amount.multiply(12).multiply(0.65).getNumber())));
         }
+
     }
 
 }

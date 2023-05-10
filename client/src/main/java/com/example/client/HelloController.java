@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 public class HelloController extends AppController<HelloApplication>{
@@ -33,12 +34,21 @@ public class HelloController extends AppController<HelloApplication>{
     public void startApp() {
 
         if(mainApp.documentMap.isEmpty()){
-            DocumentClient documentClient = EndPointProvider.getClient(DocumentClient.class);
-            List<Document> documents = documentClient.getDocuments();
-            mainApp.documentMap.putAll(documents.stream().collect(Collectors.toMap(Document::getId, o->o)));
+            CompletableFuture<Void> getDocuments = CompletableFuture.runAsync(() -> {
+                DocumentClient documentClient = EndPointProvider.getClient(DocumentClient.class);
+                List<Document> documents = documentClient.getDocuments();
+                mainApp.documentMap.putAll(documents.stream().collect(Collectors.toMap(Document::getId, o->o)));
+            });
+            getDocuments.join();
         }
 
 
+        populateGrid();
+
+
+    }
+
+    private void populateGrid(){
         mainApp.documentMap.forEach((id, document) -> {
             Button newBtn = new Button(document.getTitle());
 
@@ -51,9 +61,7 @@ public class HelloController extends AppController<HelloApplication>{
             newBtn.setVisible(true);
             newBtn.setOnAction(this::onItemSelected);
         });
-
     }
-
 
     private void onItemSelected(ActionEvent e){
         Button selected = (Button)(e.getTarget());
